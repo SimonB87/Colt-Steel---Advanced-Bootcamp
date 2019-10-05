@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.square {
+  width: 5rem;
+  height: 5rem;
+  background-color: #3993dd;
+  margin-bottom: 1rem;
+
+  animation-name: moveRight;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.other {
+  animation-direction: reverse;
+}
+
+body {
+  max-width: 100vw;
+  padding: 2rem;
+}
+
+@keyframes moveRight {
+  10% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(20rem);
+  }
+}
