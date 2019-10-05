@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Transition Properties</title>
+  </head>
+  <body>
+    <main>
+      <h1>Transition Properties:</h1>
+      <ul>
+        <li>transition-duration</li>
+        <li>transition-property</li>
+        <li>transition-timing-function</li>
+        <li>transition-delay</li>
+      </ul>
+      <h2>transition-duration</h2>
+      <p>Specifies duration</p>
+      <ul>
+        <li>transition-duration: 1s;</li>
+        <li>transition-duration: 0.5s;</li>
+        <li>transition-duration: 2s, 4s;</li>
+      </ul>
+      <h2>transition-property</h2>
+      <p>Specifies which property should exactly change</p>
+      <ul>
+        <li>transition-duration: 1s;</li>
+        <li>transition-duration: 0.5s;</li>
+        <li>transition-duration: 2s, 4s;</li>
+      </ul>
+      <p>
+        The order of transition-duration fits the order of
+        transition-properties.<br />
+        <br />
+        <div class="codeExample"></section>
+            .animated {<br />
+            transition-property: background-color, border-radius, transform;<br />
+            transition-duration: 2s, 6s, 1s;<br />
+            }<br />
+        </div>
+        <br />
+      </p>
+    </main>
+
+    <section class="testField">
+      <p class="box">Boring</p>
+      <p class="animated box">Animated</p>
+    </section>
+  </body>
+</html>

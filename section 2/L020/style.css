@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: inline-block;
+  width: 100vw;
+}
+
+main,
+.testField {
+  margin: 0;
+  padding: 2rem;
+  /* width: calc(50% - 3rem); */
+  width: 40%;
+  float: left;
+}
+
+.codeExample {
+  background: lightseagreen;
+  color: #fff;
+  padding: 1rem;
+}
+
+.animated {
+  transition-property: background-color;
+  transition-property: transform;
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
+}
+
+.box {
+  background: green;
+  height: 10rem;
+  width: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 1.25rem;
+}
+
+.box:hover {
+  background: red;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  z-index: 10;
+  -webkit-transform: scale(2);
+  transform: scale(2) rotate(45deg);
+  transform: scale(2);
+}

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: inline-block;
+  width: 100vw;
+}
+
+main,
+.testField {
+  margin: 0;
+  padding: 2rem;
+  /* width: calc(50% - 3rem); */
+  width: 40%;
+  float: left;
+}
+
+.codeExample {
+  background: lightseagreen;
+  color: #fff;
+  padding: 1rem;
+}
+
+.animated {
+  transition-property: background-color, border-radius, transform;
+  transition-duration: 2s, 6s, 1s;
+}
+
+.box {
+  background: green;
+  height: 10rem;
+  width: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 1.25rem;
+}
+
+.box:hover {
+  background: red;
+  transform-origin: top left;
+  transform: scale(2);
+  border-radius: 50%;
+}

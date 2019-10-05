@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: inline-block;
+  width: 100vw;
+}
+
+main,
+.testField {
+  margin: 0;
+  padding: 2rem;
+  width: 40%;
+  float: left;
+}
+
+.codeExample {
+  background: lightseagreen;
+  color: #fff;
+  padding: 1rem;
+}
+
+.animated {
+  transition: transform 1.5s ease-in 1s, border-radius 3s ease-out 4s;
+}
+
+.box {
+  background: green;
+  height: 10rem;
+  width: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 1.25rem;
+}
+
+.box:hover {
+  transform: translateX(10rem);
+  border-radius: 50%;
+}
